@@ -21,4 +21,5 @@ contract Aqriss {
     function getBalanceOf(address src) constant public returns (uint256) {
         return balanceOf[src];
     }
+    
 }
