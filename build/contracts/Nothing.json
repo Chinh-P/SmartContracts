@@ -1,0 +1,13 @@
+{
+  "contract_name": "Nothing",
+  "abi": [
+    {
+      "payable": true,
+      "type": "fallback"
+    }
+  ],
+  "unlinked_binary": "0x60606040523415600e57600080fd5b5b603580601c6000396000f30060606040525b5b5b0000a165627a7a723058202373648696d9f527cb029621299fa89b5902f10d47bd2a622784b39ab9510e6a0029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1508917606773
+}

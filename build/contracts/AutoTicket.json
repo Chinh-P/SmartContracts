@@ -1,0 +1,178 @@
+{
+  "contract_name": "AutoTicket",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_selectedTicket",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "createTicket",
+      "outputs": [],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "selectedTicket",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "GetWinningTicket",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "GetStatus",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "winningTicket",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getMoneyBack",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "payable": true,
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "message",
+          "type": "string"
+        }
+      ],
+      "name": "received",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "log",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b6104a18061001f6000396000f300606060405236156100755763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416632a44ad238114610229578063476181d01461026f5780639895c22114610297578063abd95b95146102bc578063c26eea54146102e1578063f1a252b814610306575b5b6003805460ff19166001179055346000808080807f16a05e8beedf3aa5e1cb43517ab364e5322f9dad9c1c8c4303ebb61b902ee3526040516020808252600c908201527f62657420726563656976656400000000000000000000000000000000000000006040808301919091526060909101905180910390a1600054945084868115156100ff57fe5b04935060098402925073ffffffffffffffffffffffffffffffffffffffff30163183111561012c57600080fd5b600a60001943014042015b066001016002555060009050805b60005460ff8216101561018a576000805460ff831690811061016357fe5b906000526020600020900160005b5054600254141561018157600191505b5b600101610145565b8115610213577ff82c50f1848136e6c140b186ea0c768b7deda5efffe42c25e96336a90b26c7448360405190815260200160405180910390a173ffffffffffffffffffffffffffffffffffffffff331683156108fc0284604051600060405180830381858888f19350505050151561020157600080fd5b6003805460ff19166002179055610220565b6003805460ff1916811790555b5b505050505050005b61026d600460248135818101908301358060208181020160405190810160405280939291908181526020018383602002808284375094965061031b95505050505050565b005b341561027a57600080fd5b6102856004356103ab565b60405190815260200160405180910390f35b34156102a257600080fd5b6102856103ce565b60405190815260200160405180910390f35b34156102c757600080fd5b6102856103d5565b60405190815260200160405180910390f35b34156102ec57600080fd5b6102856103df565b60405190815260200160405180910390f35b341561031157600080fd5b61026d6103e5565b005b60005b81518160ff16101561037157600080546001810161033c838261042a565b916000526020600020900160005b848460ff168151811061035957fe5b9060200190602002015190915550505b60010161031e565b6001805473ffffffffffffffffffffffffffffffffffffffff19163373ffffffffffffffffffffffffffffffffffffffff161790555b5050565b60008054829081106103b957fe5b906000526020600020900160005b5054905081565b6002545b90565b60035460ff165b90565b60025481565b6001543373ffffffffffffffffffffffffffffffffffffffff90811691161461040d57600080fd5b60015473ffffffffffffffffffffffffffffffffffffffff16ff5b565b81548183558181151161044e5760008381526020902061044e918101908301610454565b5b505050565b6103d291905b8082111561046e576000815560010161045a565b5090565b905600a165627a7a72305820781534df266028ae0d800f514c5bfc794583aa3dd24fec3a9876bcfa34a0e86a0029",
+  "networks": {
+    "1507792604997": {
+      "events": {
+        "0x16a05e8beedf3aa5e1cb43517ab364e5322f9dad9c1c8c4303ebb61b902ee352": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "msg",
+              "type": "string"
+            }
+          ],
+          "name": "received",
+          "type": "event"
+        },
+        "0xf82c50f1848136e6c140b186ea0c768b7deda5efffe42c25e96336a90b26c744": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "log",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xcffe08c1a16dd72b12813c9c25063096dbc3df13",
+      "updated_at": 1507792692400
+    },
+    "1507819744464": {
+      "events": {
+        "0x16a05e8beedf3aa5e1cb43517ab364e5322f9dad9c1c8c4303ebb61b902ee352": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "msg",
+              "type": "string"
+            }
+          ],
+          "name": "received",
+          "type": "event"
+        },
+        "0xf82c50f1848136e6c140b186ea0c768b7deda5efffe42c25e96336a90b26c744": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "log",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xd5117666ef4e983613a12f564365d79e041f4356",
+      "updated_at": 1507856649996
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1508917606774
+}
